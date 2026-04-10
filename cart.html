@@ -2,37 +2,63 @@
 
 <head>
     <title>Kosarica</title>
-    <link rel="stylesheet" href="/styles/cart.css"/>
+    <link rel="stylesheet" href="/styles/cart.css" />
 </head>
 
 <body>
     <div class="page">
-       <div class="zaglavlje">
-        <div class="logotip">LOGOTIP</div>
-        <div class="trenutna-kategorija">(trenutno otvorena)</div>
-        <div class="header-icons">
-          <div class="kosara"><a href="cart.html">🛒</a></div>
-          <div class="pretrazi">🔍</div>
-        </div>
-      </div>
-        <div class="kosarica">
-            <div class="proizvodi">
-                <div class="header">
-                    kosarica
-                </div>
-                <div class="kartica">
-                    Proizvod 1
-                </div>
-                <div class="kartica">
-                    Proizvod 2
-                </div>
-                <div class="kartica">
-                    Proizvod 3
-                </div>
+        <div class="zaglavlje">
+            <div class="logotip">LOGOTIP</div>
+            <div class="trenutna-kategorija">(trenutno otvorena)</div>
+            <div class="header-icons">
+                <div class="kosara"><a href="cart.html">🛒</a></div>
+                <div class="pretrazi">🔍</div>
             </div>
         </div>
-    </div>
+        <div class="kosarica">
+            <div class="naslov">KOŠARICA</div>
+            <div class="cart-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NAZIV PROIZVODA</th>
+                            <th>KOLIČINA</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Proizvod 1</td>
+                            <td class="kolicina">
+                                <button>−</button>
+                                <span>3</span>
+                                <button>+</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Proizvod 2</td>
+                            <td class="kolicina">
+                                <button>−</button>
+                                <span>3</span>
+                                <button>+</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Proizvod 3</td>
+                            <td class="kolicina">
+                                <button>−</button>
+                                <span>3</span>
+                                <button>+</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 
 </body>
+
 </html>

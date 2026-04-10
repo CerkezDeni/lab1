@@ -245,6 +245,7 @@ a {
     /* padding: 0.4em; */
     border: 0px;
     order: 3;
+    margin-left:25px;
   }
 
   *.card {
