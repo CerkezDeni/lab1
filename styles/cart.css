@@ -1,0 +1,50 @@
+.page, .zaglavlje, .proizvodi{
+    border: 1px solid;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 700px;
+  border: 1px solid;
+}
+
+.zaglavlje {
+  display: flex;
+  margin-top: 0.6em;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+  height: 55px;
+}
+.logotip {
+  width: 110px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.trenutna-kategorija {
+  width: 500px;
+  margin-left: 0.6em;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header-icons {
+  margin-left: 0.6em;
+  width: 150px;
+  display: flex;
+  border: 1px solid;
+}
+.kosara,
+.pretrazi {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
