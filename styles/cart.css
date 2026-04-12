@@ -16,32 +16,23 @@ a{
 
 .zaglavlje {
   display: flex;
-  /* margin-top: 0.6em;
-  margin-left: 0.6em;
-  margin-right: 0.6em; */
+  flex-direction: row;
   height: 55px;
+  gap:0.6em;
+  justify-content:space-between; 
 }
 .logotip {
   width: 110px;
   border: 1px solid;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-}
-.trenutna-kategorija {
-  width: 500px;
-  margin-left: 0.6em;
-  border: 1px solid;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 .header-icons {
-  margin-left: 0.6em;
   width: 150px;
   display: flex;
   border: 1px solid;
+  justify-self:flex-end;
 }
 .kosara,
 .pretrazi {
@@ -92,6 +83,19 @@ td {
   padding: 8px 0;
   text-align: left;
 }
+button{
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* font-size: large; */
+  background-color: #e7e7e7;
+  color:black;
+}
 
 @media (max-width: 1023px) {
   /* HEADER */
@@ -100,36 +104,6 @@ td {
     height: auto;
   } 
 
-  .zaglavlje {
-    flex-direction: column;
-    height: 99px;
-    /* margin: 0.4em; */
-    flex-wrap: wrap;
-     gap: 0.2em;  
-    /* max-width: 100%; */
-    /* border: 1px solid; */
-  }
-
-  .logotip {
-    width: 90px;
-    height: 45px;
-    order: 1;
-  }
-
-  .trenutna-kategorija {
-    width: 269px;
-    margin-left: 0;
-    height: 45px;
-    order: 2;
-  }
-
-  .header-icons {
-    width: 100px;
-    height: 45px;
-    order: 3;
-    align-items: flex-end;
-    margin-top: 50px;
-  }
   /* MAIN */
   .main {
     margin: 0 0.4em 0.4em 0.4em;
