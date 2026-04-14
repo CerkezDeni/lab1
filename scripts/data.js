@@ -6,35 +6,31 @@ const data = {
       products: [
         {
           name: 'Nox AT10',
-          image: '',
+          image: 'nox at10 12k.webp',
         },
         {
           name: 'Head Coello Pro',
-          image: 'rumpsteak1kg.jpg',
+          image: 'head coello pro.webp',
         },
         {
           name: 'Babolat Viper Juan Lebron',
-          image: 'sausages150gr.jpg',
+          image: 'babolat viper jl.webp',
         },
         {
-          name: 'Adidas Metalbone HRD+',
-          image: 'sausages150gr.jpg',
+          name: 'Metalbone HRD+',
+          image: 'metalbone hrd.webp',
         },
         {
           name: 'Bullpadel Neuron 2 Edge',
-          image: 'sausages150gr.jpg',
+          image: 'bullpadel neuron.webp',
         },
         {
           name: 'Siux Fenix Pro',
-          image: 'sausages150gr.jpg',
-        },
-        {
-          name: 'Bullpadel Neuron 2 Edge',
-          image: 'sausages150gr.jpg',
+          image: 'siux fenix.webp',
         },
         {
           name: 'Wilson Bela Pro v3',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wilson bela pro.webp',
         },
       ],
     },
@@ -43,23 +39,23 @@ const data = {
       products: [
         {
           name: 'Babolat Ace',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'babolat ace.webp',
         },
         {
           name: 'Head Pro S',
-          image: 'sausages150gr.jpg',
+          image: 'head pro s.webp',
         },
         {
           name: 'Wilson X3',
-          image: 'sausages150gr.jpg',
+          image: 'wilson x3.webp',
         },
         {
           name: 'Dunlop Pro',
-          image: 'sausages150gr.jpg',
+          image: 'dunlop pro.webp',
         },
         {
           name: 'Siux Neo',
-          image: 'sausages150gr.jpg',
+          image: 'siux neo.webp',
         },
       ],
     },
@@ -68,23 +64,23 @@ const data = {
       products: [
         {
           name: 'Head',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'head grip.webp',
         },
         {
-          name: '4on',
-          image: 'sausages150gr.jpg',
+          name: 'Wilson',
+          image: 'wilson grip.webp',
         },
         {
-          name: 'Nox',
-          image: 'sausages150gr.jpg',
+          name: 'Adidas',
+          image: 'adidas grip.webp',
         },
         {
           name: 'Babolat',
-          image: 'sausages150gr.jpg',
+          image: 'babolat grip.webp',
         },
         {
-          name: 'Head',
-          image: 'sausages150gr.jpg',
+          name: 'Bullpadel',
+          image: 'bullpadel grip.webp',
         },
       ],
     },
@@ -101,19 +97,19 @@ const data = {
         },
         {
           name: 'Nox AT10 Trolley',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'nox at10 bag.webp',
         },
         {
           name: 'Bullpadel Vertex',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel vertex bag.webp',
         },
         {
           name: 'Adidas Control',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'adidas control bag.webp',
         },
         {
           name: 'Techinfibre Reform',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'technifibre reform bag.webp',
         },
       ],
     },
@@ -123,23 +119,23 @@ const data = {
       products: [
         {
           name: 'Babloat Court Lite',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'babolat r.webp',
         },
         {
           name: 'Wilson Defy V1',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wilson r.webp',
         },
         {
           name: 'Head Pro',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'head pro r.webp',
         },
         {
           name: 'Bullpadel Hack',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel hack r.webp',
         },
         {
-          name: 'Adidas Multigame Tonal',
-          image: 'zivotinjskocarstvo.jpg',
+          name: 'Adidas Multigame',
+          image: 'adidas r.webp',
         },
       ],
     },
@@ -148,31 +144,31 @@ const data = {
       products: [
         {
           name: 'Asics Gel Challenger',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'asics shoes.webp',
         },
         {
           name: 'Mizuno Wave Exceed',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'mizuno shoes.webp',
         },
         {
           name: 'Nox AT10 Pro',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'nox at10 shoes.webp',
         },
         {
           name: 'Nike Zoom Vapor 12',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'nike zoom vapor 12.webp',
         },
         {
           name: 'Bullpadel Ionic 26V',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel ionic 26v.webp',
         },
         {
           name: 'Head Sprint Evo',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'head sprint evo.webp',
         },
         {
           name: 'Lacoste AG-Lt 25',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'lacoste ag-lt.webp',
         },
         
       ],
@@ -182,60 +178,60 @@ const data = {
       products: [
         {
           name: 'Bullpadel Majica',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel majica.webp',
         },
         {
           name: 'Nox Pro T-Shirt',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'nox majica.webp',
         },
         {
           name: 'Babolat Play Short',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'babolat hlace.webp',
         },
         {
-          name: 'Head Performance Polo',
-          image: 'zivotinjskocarstvo.jpg',
+          name: 'Head Performance Majica',
+          image: 'head performance.webp',
         },
         {
           name: 'Adidas Club Tee',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'adidas maijca.webp',
         },
         {
           name: 'Wilson Team Shorts',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wilson hlace.webp',
         },
         {
           name: 'Asics Court 7in Short',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'asics hlace.webp',
         },
         {
           name: 'Lacoste Sport Tee',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'lacoste majica.webp',
         },
       ],
     },
     {
-      name: 'Pomoc pri ozljedama',
+      name: 'Protiv ozljeda',
       products: [
         {
           name: 'Flooky Sleeve',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'flooky sleeve.webp',
         },
         {
           name: 'Ergonomic Insole',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'ergonomic insole.webp',
         },
         {
           name: 'Elbow brace',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'elbow brace.webp',
         },
         {
           name: 'Wrist brace',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wrist brace.webp',
         },
         {
           name: 'Ankle brace',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'ankle brace.webp',
         },
       ],
     },
@@ -244,23 +240,23 @@ const data = {
       products: [
         {
           name: '4ON spray',
-          image: 'zivotinjskocarstvo.jpg',
+          image: '4on spray.webp',
         },
         {
           name: 'Dry grip estuchado',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'dry grip estuchado.webp',
         },
         {
           name: 'Bullpadel dry grip',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel dry grip.webp',
         },
         {
           name: 'Bullpadel dry grip crystal',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'bullpadel dry grip crystal.webp',
         },
         {
-          name: 'Bullpadel dry grip box(12 komada)',
-          image: 'zivotinjskocarstvo.jpg',
+          name: 'Dry grip box(12 kom)',
+          image: 'bullpadel dry grip box.webp',
         },
       ],
     },
@@ -269,27 +265,23 @@ const data = {
       products: [
         {
           name: 'Head X3 Pump Pressurizer',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'head pressurizer.webp',
         },
         {
           name: 'Babolat racket protector',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'babolat racket protector.webp',
         },
         {
           name: 'Wilson Wrist Strap',
-          image: 'zivotinjskocarstvo.jpg',
-        },
-        {
-          name: 'Babolat Overgrip Pack',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wilson wrist strap.webp',
         },
         {
           name: 'Hat',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'hat.webp',
         },
         {
           name: 'Wristband',
-          image: 'zivotinjskocarstvo.jpg',
+          image: 'wristband.webp',
         },
       ],
     },

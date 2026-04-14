@@ -1,6 +1,6 @@
 const categoriesContainer = document.getElementById("categories");
 const productsContainer = document.getElementById("products");
-const currentCategoryLabel = document.querySelector(".trenutna-kategorija");
+const trenutacnaKategorija = document.querySelector(".trenutna-kategorija");
 
 let activeCategoryIndex = 0;
 
@@ -48,7 +48,7 @@ function renderProducts() {
 }
 
 function renderCurrentCategory() {
-  currentCategoryLabel.textContent = data.categories[activeCategoryIndex].name;
+  trenutacnaKategorija.textContent = data.categories[activeCategoryIndex].name;
 }
 
 renderCategories();
