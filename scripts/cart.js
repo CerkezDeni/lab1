@@ -1,67 +1,58 @@
-// //Za svaki pronađeni minus gumb, izvrši ovaj blok koda, a taj konkretni gumb zovi btn
-// document.querySelectorAll('.minus').forEach((btn) => {
-//   //Sad za svaki pojedini gumb postavljaš što će se dogoditi kad se klikne.
-//   btn.onclick = function () {
-//     //trazi u parentu(kolicina) prvi element clase counter
-//     let counter = this.parentElement.querySelector('.counter');
-//     let number = parseInt(counter.innerText);
-//     number--;
-//     if (number <= 0) {
-//       this.closest('tr').remove();
-//     } else {
-//       counter.innerText = number;
-//     }
-//   };
-// });
+const cartBody = document.getElementById("cartBody");
 
-// document.querySelectorAll('.plus').forEach((btn) => {
-//   btn.onclick = function () {
-//     let counter = this.parentElement.querySelector('.counter');
-//     let number = parseInt(counter.innerText);
-//     number++;
-//     counter.innerText = number;
-//   };
-// });
-//EFIKASNIJE AKO NAPRAVIS Funkcije posebno
+function renderCart() {
+  const cart = getCart();
+  cartBody.innerHTML = "";
 
-const addBtn = document.getElementById('addBtn');
-const cartBody = document.getElementById('cartBody');
+  if (cart.length === 0) {
+    cartBody.innerHTML = `
+      <tr>
+        <td colspan="2">Košarica je prazna.</td>
+      </tr>
+    `;
+    updateHeaderCartCount();
+    return;
+  }
 
-let proizvodBroj = cartBody.querySelectorAll('tr').length + 1;
+  cart.forEach((item, index) => {
+    const row = document.createElement("tr");
 
-addBtn.onclick = function () {
-  const noviRed = document.createElement('tr');
-  noviRed.innerHTML = `<td>Proizvod ${proizvodBroj}</td> <td class="kolicina"> 
-    <button class="minus">-</button>
-    <span class="counter">1</span>
-    <button class="plus">+</button></td>`;
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td class="kolicina">
+        <button class="minus" data-index="${index}">-</button>
+        <span class="counter">${item.quantity}</span>
+        <button class="plus" data-index="${index}">+</button>
+      </td>
+    `;
 
-  cartBody.appendChild(noviRed);
-  proizvodBroj++;
-};
-function povecaj(counterElement) {
-  let broj = parseInt(counterElement.innerText);
-  broj++;
-  counterElement.innerText = broj;
+    cartBody.appendChild(row);
+  });
+
+  updateHeaderCartCount();
 }
-function smanji(counterElement, row) {
-  let broj = parseInt(counterElement.innerText);
-  broj--;
-  if (broj <= 0) {
-    row.remove();
-  } else {
-    counterElement.innerText = broj;
+
+cartBody.addEventListener("click", function (e) {
+  const cart = getCart();
+
+  if (e.target.classList.contains("plus")) {
+    const index = Number(e.target.dataset.index);
+    cart[index].quantity++;
+    saveCart(cart);
+    renderCart();
   }
-}
-cartBody.onclick = function (e) {
-  const kliknutiElement = e.target;
-  if (kliknutiElement.classList.contains('plus')) {
-    const counter = kliknutiElement.parentElement.querySelector('.counter');
-    povecaj(counter);
+
+  if (e.target.classList.contains("minus")) {
+    const index = Number(e.target.dataset.index);
+    cart[index].quantity--;
+
+    if (cart[index].quantity <= 0) {
+      cart.splice(index, 1);
+    }
+
+    saveCart(cart);
+    renderCart();
   }
-  if (kliknutiElement.classList.contains('minus')) {
-    const counter = kliknutiElement.parentElement.querySelector('.counter');
-    const row = kliknutiElement.closest('tr');
-    smanji(counter, row);
-  }
-};
+});
+
+renderCart();

@@ -1,56 +1,57 @@
-const categoriesContainer = document.getElementById("categories");
-const productsContainer = document.getElementById("products");
-const trenutacnaKategorija = document.querySelector(".trenutna-kategorija");
+function getCart() {
+  const cart = localStorage.getItem("cart");
+  return cart ? JSON.parse(cart) : [];
+}
 
-let activeCategoryIndex = 0;
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
-function renderCategories() {
-  categoriesContainer.innerHTML = "";
+function addToCart(productName, categoryName) {
+  const cart = getCart();
 
-  data.categories.forEach((category, index) => {
-    const div = document.createElement("div");
-    div.textContent = category.name;
+  const existingProduct = cart.find(
+    (item) => item.name === productName && item.category === categoryName
+  );
 
-    if (index === activeCategoryIndex) {
-      div.classList.add("active");
-    }
-
-    div.addEventListener("click", () => {
-      activeCategoryIndex = index;
-      renderCategories();
-      renderProducts();
-      renderCurrentCategory();
+  if (existingProduct) {
+    existingProduct.quantity++;
+  } else {
+    cart.push({
+      name: productName,
+      category: categoryName,
+      quantity: 1,
     });
+  }
 
-    categoriesContainer.appendChild(div);
+  saveCart(cart);
+}
+
+function getProductQuantity(productName, categoryName) {
+  const cart = getCart();
+
+  const product = cart.find(
+    (item) => item.name === productName && item.category === categoryName
+  );
+
+  return product ? product.quantity : 0;
+}
+
+function getTotalQuantity() {
+  const cart = getCart();
+  let total = 0;
+
+  cart.forEach((item) => {
+    total += item.quantity;
   });
+
+  return total;
 }
 
-function renderProducts() {
-  productsContainer.innerHTML = "";
+function updateHeaderCartCount() {
+  const countElement = document.getElementById("cart-count");
+  if (!countElement) return;
 
-  const activeCategory = data.categories[activeCategoryIndex];
-
-  activeCategory.products.forEach((product) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    card.innerHTML = `
-      <div class="slika-proizvoda">
-        <img src="assets/images/${product.image}" alt="${product.name}">
-      </div>
-      <div class="ime-proizvoda">${product.name}</div>
-      <div class="kat-proizvoda">${activeCategory.name}</div>
-    `;
-
-    productsContainer.appendChild(card);
-  });
+  const total = getTotalQuantity();
+  countElement.textContent = total;
 }
-
-function renderCurrentCategory() {
-  trenutacnaKategorija.textContent = data.categories[activeCategoryIndex].name;
-}
-
-renderCategories();
-renderProducts();
-renderCurrentCategory();

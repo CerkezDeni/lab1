@@ -133,7 +133,10 @@ a {
   height: 100%;
   object-fit: cover;
 }
-
+.active :hover {
+  cursor: crosshair;
+  font-size: 150%;
+}
 /* PROIZVODI */
 .proizvodi {
   border: 1px solid;
@@ -150,7 +153,7 @@ a {
   height: 190px;
   margin-top: 7px;
   margin-left: 7px;
-  margin-bottom: 7px;;
+  margin-bottom: 7px;
   width: 117px;
   text-align: center;
 }
@@ -158,9 +161,9 @@ a {
   border: 1px solid;
   height: 120px;
   margin: 0.6em 0.6em 0em 0.6em;
-  object-fit:scale-down;
+  object-fit: scale-down;
 }
-.slika-proizvoda img{
+.slika-proizvoda img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -251,7 +254,7 @@ a {
     /* padding: 0.4em; */
     border: 0px;
     order: 3;
-    margin-left:25px;
+    margin-left: 25px;
   }
 
   *.card {
@@ -271,4 +274,61 @@ a {
     font-size: 13px;
     line-height: 1.2;
   }
+}
+
+.slika-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.slika-proizvoda img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: none;
+  font-size: 20px;
+  top: 90px;
+  right: 5px;
+}
+
+.slika-wrapper:hover .add-to-cart-btn {
+  display: block;
+}
+
+.product-badge {
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  background: #f4b6b6;
+  color: black;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+}
+
+.header-count {
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background: #f4b6b6;
+  color: black;
+  font-size: 12px;
+  margin-left: 4px;
 }

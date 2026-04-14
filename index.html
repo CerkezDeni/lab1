@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/styles/main.css" />
     <script src="scripts/data.js" defer></script>
     <script src="scripts/utils.js" defer></script>
-    
+    <script src="scripts/app.js" defer></script>
   </head>
 
   <body>
@@ -14,7 +14,11 @@
         <div class="logotip">LOGOTIP</div>
         <div class="trenutna-kategorija">(trenutno otvorena)</div>
         <div class="header-icons">
-          <div class="kosarica"><a href="cart.html">🛒</a></div>
+          <div class="kosarica">
+            <a href="cart.html"
+              >🛒<span id="cart-count" class="header-count">0</span></a
+            >
+          </div>
           <div class="pretrazi">🔍</div>
         </div>
       </div>
@@ -43,7 +47,7 @@
         <div class="content">
           <div class="pozdrav">
             <div class="pozdrav-slika">
-              <img src="assets/images/Padel-Passion-Kaltenkirchen.png" alt="" />
+              <img src="assets/images/teren.png" alt="" />
             </div>
             <div class="pozdravni-tekst">Dućan za padel opremu</div>
           </div>
