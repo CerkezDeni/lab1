@@ -32,6 +32,15 @@ const data = {
           name: 'Wilson Bela Pro v3',
           image: 'wilson bela pro.webp',
         },
+        {
+          name: 'Siux Electra',
+          image: 'siux electra.webp',
+        },
+        // {
+        //   name: 'Wilson Bela Pro v3',
+        //   image: 'wilson bela pro.webp',
+        // },
+        //test da radi se stranica povecava, ako ima vise elemenata
       ],
     },
     {
